@@ -13,7 +13,7 @@ jobs:
       - name: save current date
         run: |
           # do some operation that changes a file in the git repo
-          date > $("date +"%FT%H%M%S").txt
+          date > "$("date +"%FT%H%M%S").txt"
 
       - name: setup git config
         run: |
