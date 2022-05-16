@@ -22,14 +22,15 @@ jobs:
           git config user.email "<>"
 
       - name: commit
-          # Stage the file, commit and push
-          # git add time.txt
-          # git commit -m "new date commit"
-          # git push origin main
-        uses: EndBug/add-and-commit@v8
-        with:
-          author_name: Your Name
-          author_email: mail@example.com
-          message: 'Your commit message'
-          add: 'time.txt'
+        run: |
+           # Stage the file, commit and push
+           git add time.txt
+           git commit -m "new date commit"
+           git push origin main
+        # uses: EndBug/add-and-commit@v8
+        # with:
+          # author_name: Your Name
+          # author_email: mail@example.com
+          # message: 'Your commit message'
+          # add: 'time.txt'
 
